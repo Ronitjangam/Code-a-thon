@@ -1,0 +1,12 @@
+
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container">
+    {% for i in author %}
+    <div class="card bg-info text-white mt-5 mb-5 " href="">
+        <div class="card-body" ><a class="text-white" href="quotesonauthor?id={{i.id}}">{{i.authorname}}</a></div>
+    </div>
+   {% endfor %}
+</div>
+{% endblock %}
